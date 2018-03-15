@@ -1,0 +1,590 @@
+/*============    ШРИФТЫ    ===========*/
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url('fonts/OpenSansBold.eot');
+  src: url('fonts/OpenSansBold.eot') format('embedded-opentype'), url('fonts/OpenSansBold.woff2') format('woff2'), url('fonts/OpenSansBold.woff') format('woff'), url('fonts/OpenSansBold.ttf') format('truetype'), url('fonts/OpenSansBold.svg#OpenSansBold') format('svg');
+}
+@font-face {
+  font-family: 'OpenSansExtraBold';
+  src: url('fonts/OpenSansExtraBold.eot');
+  src: url('fonts/OpenSansExtraBold.eot') format('embedded-opentype'), url('fonts/OpenSansExtraBold.woff2') format('woff2'), url('fonts/OpenSansExtraBold.woff') format('woff'), url('fonts/OpenSansExtraBold.ttf') format('truetype'), url('fonts/OpenSansExtraBold.svg#OpenSansExtraBold') format('svg');
+}
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('fonts/OpenSansLight.eot');
+  src: url('fonts/OpenSansLight.eot') format('embedded-opentype'), url('fonts/OpenSansLight.woff2') format('woff2'), url('fonts/OpenSansLight.woff') format('woff'), url('fonts/OpenSansLight.ttf') format('truetype'), url('fonts/OpenSansLight.svg#OpenSansLight') format('svg');
+}
+@font-face {
+  font-family: 'OpenSansLightItalic';
+  src: url('fonts/OpenSansLightItalic.eot');
+  src: url('fonts/OpenSansLightItalic.eot') format('embedded-opentype'), url('fonts/OpenSansLightItalic.woff2') format('woff2'), url('fonts/OpenSansLightItalic.woff') format('woff'), url('fonts/OpenSansLightItalic.ttf') format('truetype'), url('fonts/OpenSansLightItalic.svg#OpenSansLightItalic') format('svg');
+}
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url('fonts/OpenSansRegular.eot');
+  src: url('fonts/OpenSansRegular.eot') format('embedded-opentype'), url('fonts/OpenSansRegular.woff2') format('woff2'), url('fonts/OpenSansRegular.woff') format('woff'), url('fonts/OpenSansRegular.ttf') format('truetype'), url('fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+@font-face {
+  font-family: 'OpenSansSemibold';
+  src: url('fonts/OpenSansSemibold.eot');
+  src: url('fonts/OpenSansSemibold.eot') format('embedded-opentype'), url('fonts/OpenSansSemibold.woff2') format('woff2'), url('fonts/OpenSansSemibold.woff') format('woff'), url('fonts/OpenSansSemibold.ttf') format('truetype'), url('fonts/OpenSansSemibold.svg#OpenSansSemibold') format('svg');
+}
+@font-face {
+  font-family: 'OpenSansSemiboldItalic';
+  src: url('fonts/OpenSansSemiboldItalic.eot');
+  src: url('fonts/OpenSansSemiboldItalic.eot') format('embedded-opentype'), url('fonts/OpenSansSemiboldItalic.woff2') format('woff2'), url('fonts/OpenSansSemiboldItalic.woff') format('woff'), url('fonts/OpenSansSemiboldItalic.ttf') format('truetype'), url('fonts/OpenSansSemiboldItalic.svg#OpenSansSemiboldItalic') format('svg');
+}
+.bold {
+  font-family: 'OpenSansBold';
+}
+.extrabold {
+  font-family: 'OpenSansExtraBold';
+}
+.light {
+  font-family: 'OpenSansLight';
+}
+.ilight {
+  font-family: 'OpenSansLightItalic';
+}
+.regular {
+  font-family: 'OpenSansRegular';
+}
+.semibold {
+  font-family: 'OpenSansSemibold';
+}
+.isemibold {
+  font-family: 'OpenSansSemiboldItalic';
+}
+/*==================    Базовые настройки    =================*/
+a:hover,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+h2 {
+  font-family: 'OpenSansExtraBold';
+  font-size: 36px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-transform: uppercase;
+}
+/*==================    ШАПКА    =================*/
+header {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  text-align: center;
+  font-family: 'OpenSansBold';
+  /*============    ГЛАВНЫЙ ЭКРАН    ===========*/
+}
+header section#menu {
+  background-color: rgba(0, 0, 0, 0.37);
+  vertical-align: middle;
+  text-align: center;
+}
+header section#menu .logo {
+  vertical-align: middle;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+header section#menu nav {
+  vertical-align: middle;
+}
+header section#menu nav ul.list-inline a {
+  display: inline-block;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: justify;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  -moz-transition: all 0.2s 0.02s ease;
+  -o-transition: all 0.2s 0.02s ease;
+  -webkit-transition: all 0.2s 0.02s ease;
+}
+header section#menu nav ul.list-inline a:hover {
+  text-decoration: none;
+  color: #c89f28;
+}
+header section#menu nav ul.list-inline {
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+header section#menu nav li {
+  position: relative;
+  float: left;
+  padding-right: 40px;
+  padding-left: 35px;
+}
+header section#menu .phone_number {
+  padding-top: 3px;
+}
+header section#menu .phone_number a {
+  color: white;
+  padding-bottom: 0px;
+  font-size: 15px;
+}
+header section#menu .phone_number .call_back_tm {
+  text-transform: uppercase;
+  border: 1px solid;
+  background-color: #c89f28;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 1rem;
+}
+header section#main h1 {
+  padding-top: 165px;
+  padding-bottom: 110px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'OpenSansRegular';
+  font-size: 55px;
+}
+header section#main h1 span {
+  font-family: 'OpenSansExtraBold';
+  color: #c89f28;
+  font-size: 75px;
+}
+header section#main .main_buttons {
+  padding-bottom: 160px;
+}
+header section#main .main_buttons button#kind {
+  border: none;
+  color: #000;
+  background-color: #ffffff;
+  padding: 27px 36px;
+  border-radius: 3px;
+  font-family: 'OpenSansExtraBold';
+  font-size: 15px;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+header section#main .main_buttons button#kind:hover {
+  background-color: #bebebe;
+}
+header section#main .main_buttons button#online {
+  border: none;
+  color: #fff;
+  background-color: #640000;
+  padding: 27px 59px;
+  border-radius: 3px;
+  font-family: 'OpenSansExtraBold';
+  font-size: 15px;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+header section#main .main_buttons button#online:hover {
+  background-color: #8f0101;
+}
+/*============    ПРИМЕРЫ РАБОТ    ===========*/
+section#examples {
+  background: #dbd0db;
+  background: -moz-linear-gradient(-45deg, #dbd0db 0%, #ffffff 0%, #f2f2f2 70%, #ededed 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #dbd0db), color-stop(0%, #ffffff), color-stop(70%, #f2f2f2), color-stop(100%, #ededed));
+  background: -webkit-linear-gradient(-45deg, #dbd0db 0%, #ffffff 0%, #f2f2f2 70%, #ededed 100%);
+  background: -o-linear-gradient(-45deg, #dbd0db 0%, #ffffff 0%, #f2f2f2 70%, #ededed 100%);
+  background: -ms-linear-gradient(-45deg, #dbd0db 0%, #ffffff 0%, #f2f2f2 70%, #ededed 100%);
+  padding-bottom: 70px;
+  /*Last thing remaining is to add transitions*/
+  /*Time to add the click effects*/
+  /*Clicking any thumbnail now should change its opacity(style)*/
+  /*Time to work on the main images*/
+  /*That hides all main images at a 110% size
+	On click the images will be displayed at normal size to complete the effect
+	*/
+  /*Clicking on any thumbnail now should activate the image related to it*/
+  /*We are done :)*/
+}
+section#examples .slider {
+  width: 950px;
+  /*Same as width of the large image*/
+  position: relative;
+  /*Instead of height we will use padding*/
+  padding-top: 632px;
+  /*That helps bring the labels down*/
+  margin: auto;
+  /*Lets add a shadow*/
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+section#examples .slider > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s;
+}
+section#examples .slider input[name='slide_switch'] {
+  display: none;
+}
+section#examples .slider label {
+  /*Lets add some spacing for the thumbnails*/
+  margin: 18px 0 0 18px;
+  border: 3px solid #999;
+  float: left;
+  cursor: pointer;
+  transition: all 0.5s;
+  /*Default style = low opacity*/
+  opacity: 0.6;
+}
+section#examples .slider label img {
+  display: block;
+}
+section#examples .slider input[name='slide_switch']:checked + label {
+  border-color: #666;
+  opacity: 1;
+}
+section#examples .slider input[name='slide_switch'] ~ img {
+  opacity: 0;
+  transform: scale(1.1);
+}
+section#examples .slider input[name='slide_switch']:checked + label + img {
+  opacity: 1;
+  transform: scale(1);
+}
+/*============    ГАЛЕРЕЯ ЗАЛОВ    ===========*/
+section#gallery {
+  /* для запоминания размера пикчи image {
+		width: 368px;
+		height: 290px;
+		padding: 10px;
+		vertical-align: middle;
+		
+	}
+	*/
+  /*
+		 width: 368px;
+		height: 290px; 
+	*/
+  /*Зададим начальный стиль для блока с айди zal*/
+  font-family: 'OpenSansExtraBold';
+  font-size: 13px;
+  padding-bottom: 70px;
+  text-transform: uppercase;
+  background-color: #f9f9f9;
+  /*Этот стиль будет применен после наведения
+	мышью на блок
+	*/
+  /*
+	А этот стиль будет применен
+	после того как мышь будет убрана
+	*/
+  /*Этот стиль будет применен после наведения
+	мышью на блок
+	*/
+  /*
+	А этот стиль будет применен
+	после того как мышь будет убрана
+	*/
+}
+section#gallery .text {
+  padding-top: 60px;
+  text-shadow: black 2px 2px 3px;
+}
+section#gallery #zal {
+  width: 368px;
+  height: 290px;
+  padding: 10px;
+  background-image: url("../img/gallery1b.png");
+}
+section#gallery #zal:hover {
+  background-image: url("../img/gallery1.png");
+}
+section#gallery #zal:hover h3 {
+  color: #42d4f4;
+}
+section#gallery #zal:hover p {
+  color: #fff;
+}
+section#gallery #zal:after {
+  background-image: url("../img/gallery1b.png");
+}
+section#gallery #zal2 {
+  margin-top: 10px;
+  width: 368px;
+  height: 290px;
+  padding: 10px;
+  background-image: url("../img/gallery2b.png");
+}
+section#gallery #zal2:hover {
+  background-image: url("../img/gallery2.png");
+}
+section#gallery #zal2:hover h3 {
+  color: #42d4f4;
+}
+section#gallery #zal2:hover p {
+  color: #fff;
+}
+section#gallery #zal2:after {
+  background-image: url("../img/gallery2b.png");
+}
+/*------------------------------------------*/
+/*============    ЕСТЬ ДЛЯ ВАС   ===========*/
+section#for_you {
+  font-family: 'OpenSansExtraBold';
+  font-size: 12px;
+  padding-bottom: 70px;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+section#for_you p {
+  padding-top: 15px;
+}
+section#for_you .part2 {
+  margin-top: 45px;
+}
+/*============    Наши услуги    ===========*/
+section#service {
+  font-family: 'OpenSansExtraBold';
+  padding-bottom: 70px;
+  font-size: 12px;
+  background-image: url(../img/bgb.png);
+  color: #fff;
+  background-size: cover;
+}
+section#service ul {
+  font-family: 'OpenSansSemibold';
+  text-transform: uppercase;
+}
+section#service .part_left {
+  text-align: left;
+}
+section#service .part-right {
+  text-align: right;
+}
+section#service img {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+section#service section#job {
+  font-family: 'OpenSansSemibold';
+}
+section#service section#job h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+section#service section#job h4 {
+  font-size: 16px;
+}
+/*============    НАША КОМАНДА    ===========*/
+section#team {
+  padding-bottom: 70px;
+  background-color: #dddddd;
+}
+section#team h3 {
+  padding-top: 15px;
+  font-family: 'OpenSansSemibold';
+  text-transform: uppercase;
+  font-size: 30px;
+}
+section#team h4 {
+  font-family: 'OpenSansBold';
+  text-transform: uppercase;
+  color: #edb92b;
+  font-size: 24px;
+}
+section#team h5 {
+  font-family: 'OpenSansRegular';
+  padding-top: 10px;
+  font-size: 18px;
+}
+/*============   ОТЗЫВЫ    ===========*/
+section#recall {
+  padding-bottom: 70px;
+}
+section#recall #slider_1 .container,
+section#recall #slider_1 .navi,
+section#recall #slider_1 .scrollable,
+section#recall #slider_1 .item {
+  width: 800px;
+}
+section#recall #slider_1 .container,
+section#recall #slider_1 .scrollable {
+  height: 145px;
+}
+section#recall #slider_1 a.disabled {
+  visibility: hidden !important;
+}
+section#recall #slider_1 .container {
+  margin: 0 auto;
+  clear: both;
+  position: relative;
+}
+section#recall #slider_1 .scrollable {
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+section#recall #slider_1 .scrollable .items {
+  width: 20000em;
+  position: absolute;
+  clear: both;
+}
+section#recall #slider_1 .items .item {
+  float: left;
+}
+section#recall #slider_1 a.browse {
+  cursor: pointer;
+  margin: 0;
+  width: 39px;
+  height: 75px;
+  position: absolute;
+  top: 20px;
+  border: none;
+  border-radius: 0;
+  background: url(http://media.lpgenerator.ru/images/10285/snav_1.png#size_78x75) 0 0 no-repeat;
+}
+section#recall #slider_1 a.left {
+  left: -90px;
+}
+section#recall #slider_1 a.right {
+  background-position: -39px 0;
+  right: -90px;
+}
+section#recall #slider_1 .items .img {
+  height: 112px;
+  width: 112px;
+  float: left;
+  margin: 0;
+}
+section#recall #slider_1 .items .img img {
+  max-widht: 106px;
+  max-height: 106px;
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #dddddd;
+}
+section#recall #slider_1 .items .content {
+  width: 650px;
+  float: left;
+  margin: 0 0 0 38px;
+}
+section#recall #slider_1 .items .content .name {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'OpenSansSemiboldItalic';
+}
+section#recall #slider_1 .items .content .text {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: 'OpenSansLightItalic';
+  margin: 16px 0 0 0;
+}
+/*============    Мы находимся    ===========*/
+section#map {
+  background-image: url("../img/bcg.png");
+  background-size: cover;
+}
+section#map h2 {
+  background-color: #c89f28;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-top: 0px;
+  color: #fff;
+  font-family: 'OpenSansBold';
+  font-size: 36px;
+  text-transform: uppercase;
+  background-size: cover;
+}
+section#map h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  font-family: 'OpenSansSemibold';
+  color: #fff;
+}
+section#map .black {
+  color: #000;
+  font-family: 'OpenSansBold';
+}
+section#map .forma {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #f1f1f1;
+  margin-top: 60px;
+}
+section#map .forma .btn-danger {
+  border: none;
+  color: #fff;
+  background-color: #640000;
+  padding: 27px 90px;
+  border-radius: 3px;
+  font-family: 'OpenSansExtraBold';
+  font-size: 15px;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+section#map .forma .btn-danger:hover {
+  background-color: #8f0101;
+}
+section#map div.forma {
+  vertical-align: middle;
+  text-align: center;
+}
+/*============    ПОДВАЛ    ===========*/
+footer {
+  background-color: #edb92b;
+  font-family: 'OpenSansRegular';
+  text-transform: uppercase;
+}
+footer .flogo {
+  text-align: middle;
+  vertical-align: middle;
+  padding-top: 20px;
+  color: #fff;
+  font-family: 'OpenSansSemibold';
+  font-size: 16px;
+}
+footer .flogo p {
+  padding-top: 4px;
+}
+footer .tmenu {
+  text-align: middle;
+  vertical-align: middle;
+  padding-top: 18px;
+  color: #fff;
+}
+footer .tmenu a {
+  color: #fff;
+}
+footer .tmenu a:hover {
+  text-decoration: none;
+  color: #000;
+}
+footer .oservice button#online {
+  padding-left: 15px;
+  border: none;
+  color: #fff;
+  background-color: #640000;
+  padding: 7px 9px;
+  border-radius: 3px;
+  font-family: 'OpenSansExtraBold';
+  font-size: 15px;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+footer .oservice button#online:hover {
+  background-color: #8f0101;
+}
+footer .phone_number {
+  padding-top: 0px;
+  padding-left: 19px;
+}
+footer .phone_number a {
+  color: white;
+  padding-bottom: 0px;
+  font-size: 15px;
+}
+footer .phone_number .call_back_tm {
+  text-transform: uppercase;
+  border: 1px solid;
+  background-color: #c89f28;
+  border-radius: 3px;
+  padding: 2px;
+  font-size: 1rem;
+}
+/*============    	ВСПЛЫВАЮЩИЕ ОКНА    ===========*/
+/*============    	АДАПТИВ    ===========*/
