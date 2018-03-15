@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Заголовок сайта -->
+    <title>Фотостудия Focus</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet/less" href="">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/fontello-embedded.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Фавиконка -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- типа библы для слайдерa-->
+    <link rel="stylesheet" href="//yandex.st/jquery/fancybox/2.1.4/jquery.fancybox.css"/>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
+  </head>
+  <body>
+  
+    <header>
+        <section id="menu">
+           <div class="container">
+                <div class="row header">
+                    
+                    <div class="col-md-2 logo">
+                       <img src="img/logo_header.png" alt="Логотип" class="img-responsive"> <!--img-responsive - чтобы логотип становился "резиноваым"-->
+                    </div>
+                    
+                  
+                    <nav>
+                     <ul class="col-md-8 list-inline">
+                        <li><a href="#">Преимущества</a>
+                        <li><a href="#">примеры работ</a>
+                        <li><a href="#">Отзывы</a>
+                        <li><a href="#">Где нас найти</a>
+                      </ul>
+                    </nav>
+                  
+                  
+                  <div class="col-md-2 phone_number">
+                    <h5><a href="tel: +78005553535">8 (800) 555 35 35</a></h5>
+                    <a href="tel: +78005553535" class="call_back_tm"><i class="fa fa-phone" aria-hidden="true"></i> Перезвоните мне</a>
+                    
+                  </div>
+                </div>
+          </div>
+        </section>
+
+        <section id="main">
+          <div class="container text-center">
+            <div class="row main_header">
+                <h1>Фотостудия <br>
+                  <span>Фокус</span>
+                </h1>
+                
+            </div>
+            <div class="row main_buttons">
+
+              <a  href="#service"><button id="kind">Изучить виды услуг</button></a>
+              <button data toggle="modal" href="#" id="online">Онлайн запись</button>
+            </div>
+          </div>
+        </section>
+    </header>
+      
+  
+    <section id="examples" text-center>
+      <div class="container text-center">
+        <div class="row">
+          <div class="section-header">
+            <h2>Примеры работ</h2>
+          </div>
+        </div>
+        <div class="slider">
+          <input type="radio" name="slide_switch" id="id1" checked="checked"/>
+          <label for="id1">
+            <img src="img/ex1.jpg" width="100"/>
+          </label>
+          <img src="img/ex1.jpg"/>
+          
+          <!--Lets show the second image by default on page load-->
+          <input type="radio" name="slide_switch" id="id2" />
+          <label for="id2">
+            <img src="img/ex2.jpg" width="100"/>
+          </label>
+          <img src="img/ex2.jpg"/>
+          
+          <input type="radio" name="slide_switch" id="id3"/>
+          <label for="id3">
+            <img src="img/ex3.jpg" width="100"/>
+          </label>
+          <img src="img/ex3.jpg"/>
+          
+          <input type="radio" name="slide_switch" id="id4"/>
+          <label for="id4">
+            <img src="img/ex4.jpg" width="100"/>
+          </label>
+          <img src="img/ex4.jpg"/>
+          
+          <input type="radio" name="slide_switch" id="id5"/>
+          <label for="id5">
+            <img src="img/ex5.jpg" width="100"/>
+          </label>
+          <img src="img/ex5.jpg"/>
+
+          <input type="radio" name="slide_switch" id="id6" />
+          <label for="id6">
+            <img src="img/ex6.jpg" width="100"/>
+          </label>
+          <img src="img/ex6.jpg"/>
+
+          <input type="radio" name="slide_switch" id="id7" />
+          <label for="id7">
+            <img src="img/ex7.jpg" width="100"/>
+          </label>
+          <img src="img/ex7.jpg"/>
+        </div>
+
+<!-- We will use PrefixFree - a script that takes care of CSS3 vendor prefixes
+You can download it from http://leaverou.github.com/prefixfree/ -->
+<script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
+      </div>
+    </section>
+
+    
+
+    
+
+    <section id="gallery"">
+
+      <div class="container text-center">
+          <div class="row">
+          <h2>Галерея залов</h2>
+          </div>
+
+        <div class="col-md-4"><div id="zal">
+          <div class="text">
+            <h3 class="text-center">Зал Dream</h3>
+            <p>Будни - 600 рублей</p>
+            <p>Выходные - 800 рублей</p>
+          </div>
+
+        </div> </div>
+        <div class="col-md-4"><div id="zal">
+          <div class="text">
+            <h3 class="text-center">Зал Dream</h3>
+            <p>Будни - 600 рублей</p>
+            <p>Выходные - 800 рублей</p>
+          </div>
+    
+        </div> </div>
+        <div class="col-md-4"><div id="zal">
+          <div class="text">
+            <h3 class="text-center">Зал Dream</h3>
+            <p>Будни - 600 рублей</p>
+            <p>Выходные - 800 рублей</p>
+          </div>
+        </div> </div>
+      </div>
+      <div class="container text-center">
+        <div class="col-md-4"><div id="zal2">
+          <div class="text">
+            <h3 class="text-center">Зал Nature</h3>
+            <p>Будни - 600 рублей</p>
+            <p>Выходные - 800 рублей</p>
+          </div>
+
+        </div> </div>
+        <div class="col-md-4"><div id="zal2">
+          <div class="text">
+            <h3 class="text-center">Зал Nature</h3>
+            <p>Будни - 600 рублей</p>
+            <p>Выходные - 800 рублей</p>
+          </div>
+
+        </div> </div>
+        <div class="col-md-4"><div id="zal2">
+          <div class="text">
+            <h3 class="text-center">Зал Nature</h3>
+            <p>Будни - 600 рублей</p>
+            <p>Выходные - 800 рублей</p>
+          </div>
+        </div> </div>
+    </div>    
+    </section>
+
+    
+     
+    <section id="for_you">
+      <div class="container text-center">
+        <div class="row">
+          <h2>У нас есть для Вас</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4 place">
+            <i class="fa fa-cloud fa-5x" aria-hidden="true"></i>
+            <p>Более 600кв метров <br>
+            креативного пространства</p>
+          </div>
+          <div class="col-md-4 team">
+            <i class="fa fa-users fa-5x" aria-hidden="true"></i>
+            <p>КОМАНДА ПРОФЕССИОНАЛЬНЫХ<br>
+          ФОТОГРАФОВ</p>
+        </div>
+          <div class="col-md-4 WiFi">
+            <i class="fa fa-wifi fa-5x" aria-hidden="true"></i>
+            <p>бЫСТРЫЙ ВАФАЙ</p>
+          </div>
+        </div>
+        
+      </div>
+        <div class="container text-center">
+          <div class="row"> 
+          <div class="part2">
+            <div class="col-md-4 cafe">
+            <i class="fa fa-birthday-cake fa-5x" aria-hidden="true"></i>
+            <p>КАФЕ СО ВКУСНЫМИ СНЕКАМИ</p>
+          </div>
+          <div class="col-md-4 time">
+            <i class="fa fa-calendar-check-o fa-5x" aria-hidden="true"></i>
+
+            <p>гИБКИЙ ГРАФИК</p>
+          </div>
+          <div class="col-md-4 feelings"> 
+            <i class="fa fa-camera fa-5x" aria-hidden="true"></i>
+
+            <p>НЕЗАБЫВАЕМЫЕ ОЩУЩЕНИЯ<br>
+            ОТ ФОТОСЕССИИ</p>
+          </div>
+          </div>
+        </div>
+        </div>
+     </section>
+    
+
+    <section id="service">
+      <div class="container text-center">
+        <div class="row"><h2>Наши услуги</h2></div>
+        <div class="row">
+          <div class="col-md-6 ">
+            <ul class="part_left">
+              <dl><h3><i class="fa fa-pencil-square-o fa-1x" aria-hidden="true"></i>
+Частная фотосъемка</h3></dl>
+              <dl><h3><i class="fa fa-pencil-square-o fa-1x" aria-hidden="true"></i>Подарочные сертификаты</h3></dl>
+              <dl><h3><i class="fa fa-pencil-square-o fa-1x" aria-hidden="true"></i>Организация мероприятия</h3></dl>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="part-right">
+              <dl><h3>Аренда оборудования<i class="fa fa-pencil-square-o fa-1x" aria-hidden="true"></i></h3></dl>
+              <dl><h3>Коммерческая съемка<i class="fa fa-pencil-square-o fa-1x" aria-hidden="true"></i></h3></dl>
+              <dl><h3>Дизайн<i class="fa fa-pencil-square-o fa-1x" aria-hidden="true"></i></h3></dl>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section id="job">
+        <div class="container text-center">
+          <div class="row">
+            <div class="row"><h2>Порядок работы</h2></div>
+          </div>
+          <div class="row">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="h3">1.Встреча</div>
+                <img src="img/1.png" alt="">
+                <h4>
+                  В офисе показываем 
+                  портфолио наших 
+                  фотографов и 
+                  видеографов Уточняем 
+                  пожелания, подбираем 
+                  оптимальный пакет услуг, 
+                  а также составляем 
+                  Ваш план съемки
+                </h4>
+              </div>
+              <div class="col-md-3">
+                <div class="h3">2.Оформление</div>
+                <img src="img/2.png" alt="">
+                <h4>
+                  В офисе показываем 
+                  портфолио наших 
+                  фотографов и 
+                  видеографов Уточняем 
+                  пожелания, подбираем 
+                  оптимальный пакет услуг, 
+                  а также составляем
+                  Ваш план съемки
+                </h4>
+              </div>
+              <div class="col-md-3">
+                <div class="h3">3.Съемка</div>
+                <img src="img/3.png" alt="">
+                <h4>
+                  Проводим съемку, 
+                  учитывая ваши 
+                  пожелания. Оплачиваете 
+                  остаток, и уже через 
+                  3-7 дн. вы можете 
+                  получить первые 
+                  фотографии;
+                </h4>
+              </div>
+              <div class="col-md-3">
+                <div class="h3">4.Готовность</div>
+                <img src="img/4.png" alt="">
+                <h4>
+                  Через 1-4 месяца Вы 
+                  получаете готовые фото 
+                  и видео на flash 
+                  накопителе в 
+                  деревянной шкатулке 
+                  или по ссылке 
+                  на облако.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="team">
+      <div class="container text-center">
+        <div class="row">
+          <h2>Наша команда</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="img/team/1.png" alt="">
+              <h3>Раиса <br> Петровна</h3>
+              <h4>Руководитель</h4>
+              <h5>Lorem ipsum dolor sit amet, 
+              consectetur adipiscing elit. 
+              Nam et suscipit tortor. 
+              Nulla malesuada, lectus 
+              at commodo
+              </h5>
+            </div>
+            <div class="col-md-4">
+              <img src="img/team/2.png" alt="">
+              <h3>Валера</h3>
+              <h4>Системный Администратор</h4>
+              <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus eveniet</h5>
+            </div>
+            <div class="col-md-4">
+              <img src="img/team/3.png" alt="">
+              <h3>Александра Ивановна</h3>
+              <h4>Администратор</h4>
+              <h5>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, deleniti consequuntur officiis expedita cupiditate esse ea sim
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recall">
+      <div class="container text-center">
+        <div class="row">
+          <h2>Что говорят наши клиенты</h2>
+        </div>
+
+
+<div id="slider_1">
+        <div class="container">
+                <a class="prev browse left"></a>
+                <div class="scrollable" id="scrollable">
+                        <div class="items">
+                                <div class="item">
+                                        <div class="img"><img src="img/review.png"/></div>
+                                        <div class="content">
+                                                <div class="name">Маркус и Оля</div>
+                                                <div class="text">Это было очень весело, спасибо что пригласили! Отлично провели время, получили прекрасные фото!</div>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <div class="img"><img src="http://media.lpgenerator.ru/images/10285/kudrashka.png#size_106x106"/></div>
+                                        <div class="content">
+                                                <div class="name">Лизюкова Оксана</div>
+                                                <div class="text">Никогда не думала, что можно так хорошо и организованно провести фотосессию. Была приятна удивлена. Спасибо вам!</div>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <div class="img"><img src="http://media.lpgenerator.ru/images/10285/ochkarik.png#size_106x106"/></div>
+                                        <div class="content">
+                                                <div class="name">Скворцов Дмитрий</div>
+                                                <div class="text">Отзывчивое руководство, фотографы - профессионалы своего дела. Быстро отщелкали и через пару дней фото уже были готовы. Огромное спасибо!</div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <a class="next browse right"></a>
+        </div>
+</div>
+
+
+        
+                
+
+      </div>
+    </section>
+
+    <section id="map">
+      <div class="container">
+        <div class="row"><h2>Мы находимся</h2></div>
+        <div class="row">
+          <div class="col-md-8">
+            
+            <h3>Казань, Кремлевская 16а</h3>
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:340px;width:600px;'><div id='gmap_canvas' style='height:340px;width:600px;'></div><div><small><a href="https://embedgooglemaps.com/ru/">embedgooglemaps.com/ru</a></small></div><div><small><a href="https://mrpromokod.ru/">Visit this site</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(55.79140963677324,49.11860990317996),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(55.79140963677324,49.11860990317996)});infowindow = new google.maps.InfoWindow({content:'<strong>Focus</strong><br>Kazan, Kremlevskya 16a<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+            <h3>Здание КФУ, вход с торца</h3>
+
+          </div>
+          <div class="col-md-4">
+            <div class="forma text-center">
+              <h3 class="black">Форма онлайн-записи</h3>
+              <form action="#" class="text-center">
+                
+                <div class="forg-group"><label for="name">Ваше имя</label>
+                <input type="text" placeholder="Пример: Иван" name="name" class="form-control mx-auto d-block" id="name"></div> <!--в css для label margin-right означает оступ от правого края, а margin-left - отступ от левого края, top -сверху, а bottom - снизу-->
+               
+                <div class="formgroup"><label for="email">Ваше мыло</label>
+                <input type="text" placeholder="Пример: ivan@gmail.com" class="form-control mx-auto d-block" id="email"></div>
+                  <br />
+                <div class="formgroup"><button type="button" class="btn btn-danger btn-lg">Отправить запрос</button></div> <!--sumbit - отправляет данные-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <div class="flogo">
+              <img src="img/logo_footer.png" alt="logo_footero">
+              <p>2017 / Все права защищены</p>
+            </div>
+          </div>
+          <div class="tmenu">
+            <div class="col-md-6">
+            <div class="col-md-4">
+              <ul>
+                <li><a href="#">Залы</a>
+                <li><a href="#">Расписание</a>
+                <li><a href="#">Правила</a>
+              </ul>
+            </div>
+            <div class="sp">
+              <div class="col-md-4 text-center">
+                <a href="#">Специальное предложение</a>
+             </div>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li><a href="#">Работы</a>
+                <li><a href="#">Фотографы</a>
+                <li><a href="#">Прайс</a>
+              </ul>
+            </div>
+          </div>
+          </div>
+          <div class="col-md-3">
+            <div class="oservice">
+              <button data toggle="modal" href="#" id="online">Онлайн запись</button>
+            </div>
+            <div class="phone_number">
+                    <h5><a href="tel: +78005553535">8 (800) 555 35 35</a></h5>
+                    <a href="tel: +78005553535" class="call_back_tm"><i class="fa fa-phone" aria-hidden="true"></i> Перезвоните мне</a>
+                    
+                  </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      $(document).ready(
+          function() {
+              $("html").niceScroll({cursorcolor:"#000"});
+          }
+      );
+    </script>
+
+    <!--типа скрипты для слайдера-->
+    
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-tools/1.2.7/jquery.tools.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+<script src="//yandex.st/jquery/fancybox/2.1.4/jquery.fancybox.min.js"></script>
+<script>jq_181 = jQuery.noConflict(true);</script>
+<script>jq_181(function($){  $('.preview-main-container').css({ 'min-width':$('.page_container').css('width') }); });</script>
+
+<script>
+        jq_181(function($){
+                $("#slider_1 .scrollable")
+                        .scrollable({ circular: true, speed:700 })
+                $('.fancybox').fancybox();
+        });
+</script>
+
+  </body>
+</html>
